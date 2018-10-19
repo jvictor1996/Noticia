@@ -1,18 +1,25 @@
-<!--
-  Generated template for the CategoriasPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Categorias</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Noticia</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-card>
+    <img src="../../assets/imgs/sp.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        São Paulo tem a maior chuva de 20 anos
+        </ion-card-title>
 
+    </ion-card-content>
+    <button ion-button clear item-end (click)="navNoticiaDetalhe(p)">Visualizar</button>
+  </ion-card>
 </ion-content>
