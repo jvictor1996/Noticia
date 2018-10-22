@@ -12,14 +12,15 @@
 
 
 <ion-content padding>
-  <ion-card>
-    <img src="../../assets/imgs/sp.jpg"/>
-    <ion-card-content>
+  <ion-item *ngFor="let n of noticias">
+    <ion-card>
+      <img src="../../assets/imgs/{{n.imagem}}"/>
+      <ion-card-content>
       <ion-card-title>
-        São Paulo tem a maior chuva de 20 anos
+        {{n.titulo}}
         </ion-card-title>
-
-    </ion-card-content>
-    <button ion-button clear item-end (click)="navNoticiaDetalhe(p)">Visualizar</button>
-  </ion-card>
+      </ion-card-content>
+      <button ion-button block (click)="navNoticiaDetalhe(n)">Visualizar</button>
+      </ion-card> 
+  </ion-item>
 </ion-content>

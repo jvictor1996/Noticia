@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Noticia } from '../../model/noticia';
 
-/**
- * Generated class for the NoticiaDetalhePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,8 +9,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'noticia-detalhe.html',
 })
 export class NoticiaDetalhePage {
+  
+  noticia : Noticia;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.noticia = this.navParams.get('noticia');
   }
 
   ionViewDidLoad() {

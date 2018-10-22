@@ -4,4 +4,5 @@ export class Noticia{
     autor : string;
     data : string;
     imagem : string;
+  categoria_id: number;
 }

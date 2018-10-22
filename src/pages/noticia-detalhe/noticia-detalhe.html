@@ -12,11 +12,18 @@
 
 
 <ion-content padding>
-  <img src="../../assets/imgs/sp.jpg"/>
-  <ion-title>
-    São Paulo tem a maior chuva de 20 anos
-  </ion-title>
-  <p>
-    ...
-  </p>
+
+    <ion-card>
+        <img src="../../assets/imgs/{{noticia.imagem}}"/>
+        <ion-card-content>
+          <ion-card-title>
+            {{noticia.titulo}}
+            </ion-card-title>
+          <p>
+            {{noticia.conteudo}}
+          </p>
+        </ion-card-content>
+      </ion-card>
+      
+
 </ion-content>
